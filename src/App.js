@@ -7,7 +7,6 @@ function App() {
 
   const addTodo = (event)=>{
     event.preventDefault();
-    console.log('Im working')
     setTodos([...todos, input])
     setInput('')
   }
@@ -18,7 +17,7 @@ function App() {
 
     <form>
       <input value={input} onChange={event =>(setInput(event.target.value))}/>
-      <button onClick={addTodo}>Add Todo</button>
+      <button disabled={!input} type='submit' onClick={addTodo}>Add Todo</button>
     </form>
 
     <ul className='todo-card'>
