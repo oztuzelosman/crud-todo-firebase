@@ -1,5 +1,7 @@
 import {useState} from 'react';
 import './App.css';
+import './Navbar'
+import Navbar from './Navbar';
 
 function App() {
   const [todos, setTodos] = useState(['learn react','learn material ui'])
@@ -13,17 +15,25 @@ function App() {
 
   return (
     <div className="container">
-    <h1> Hello World</h1>
+    <Navbar/>
 
-    <form>
+    <form className='new-todo'>
       <input value={input} onChange={event =>(setInput(event.target.value))}/>
       <button disabled={!input} type='submit' onClick={addTodo}>Add Todo</button>
     </form>
 
-    <ul className='todo-card'>
-      {todos.map((todo)=> (<li>{todo}</li>))}
-    </ul>
-    
+      <div className='list-item'>
+      <ul>
+        {todos.map((todo)=> (
+          <li>
+            <div className="list-item__description">
+              <h2>{todo}</h2>
+            </div>
+          </li>
+        ))}
+      </ul>
+      </div>
+   
     </div>
   );
 }
