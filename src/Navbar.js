@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className="navbar">
       <nav>
         <a href=" " className="brand">
-          <h1>Todo App</h1>
+          <h1>Todo List App</h1>
         </a>
         <a href=" ">Weather Info</a>
       </nav>

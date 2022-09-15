@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Indie+Flower&family=Nixie+One&family=Poppins:wght@400;700&display=swap');
+
+body{
+  font-family: 'Comfortaa', cursive;
+}
+/*components*/
 
 .new-todo {
   display: flex;
@@ -22,6 +28,7 @@
   color: #e4e4e5;
   border-radius:  9px;
   margin-left: 1rem;
+  font-weight: 700;
 }
 
 .new-todo button:hover,
@@ -58,13 +65,14 @@
   margin: 20px 0;
   color: #e4e4e4;
   background-color: #27496D;
+  font-weight: 400;
 }
 .list-item .filters {
-    display: flex;
-    gap: 10px;
-  }
-  .list-item button {
-    padding: 10px;
-    font-size: 16px;
-    flex-grow: 1;
-  }
+  display: flex;
+  gap: 10px;
+}
+.list-item button {
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+}
