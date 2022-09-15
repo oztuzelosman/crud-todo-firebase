@@ -3,7 +3,9 @@ import './App.css';
 import './Navbar'
 import Navbar from './Navbar';
 import {v4 as uuidv4} from "uuid";
-
+import {RiCloseCircleLine} from 'react-icons/ri'
+import {TbEditCircle} from 'react-icons/tb'
+import {CgCheckO} from 'react-icons/cg'
 
 function App() {
   const [todos, setTodos] = useState([{id: uuidv4(), title: 'Learn react', completed:false}])
@@ -29,9 +31,21 @@ function App() {
         {todos.map((todo)=> (
           <li key={todo.id}>
             <div>
-          <input type='text' value={todo.title} className='list' onChange={(event)=> event.preventDefault()}/>
-
+              <input type='text' value={todo.title} className='list' onChange={(event)=> event.preventDefault()}/>
             </div>
+
+            <div className='list-item__buttons'>
+            <button>              
+              <RiCloseCircleLine className='list-item__buttons__cl'/>
+            </button>
+            <button>              
+              <TbEditCircle className='list-item__buttons__ed'/>
+            </button>
+            <button>              
+              <CgCheckO className='list-item__buttons__ch'/>
+            </button>
+            </div>
+
           </li>
         ))}
       </ul>
