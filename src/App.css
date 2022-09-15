@@ -11,7 +11,7 @@ body{
   background-color: #fff;
   padding: 1rem;
   margin: 2rem auto;
-  width: 60rem;
+  width: 50rem;
   max-width: 95%;
   border-radius: 9px;
   text-align: center;
@@ -42,14 +42,14 @@ body{
   padding: 0.5rem;
   border-radius: 6px;
   border: 1px solid #27496D;
-  width: 48rem;
+  width: 38rem;
   max-width: 100%;
 }
 
 /*todo-list*/
 
 .list-item {
-  width: 62rem;
+  width: 51rem;
   margin: 2rem auto;
   max-width: 95%;
 }
