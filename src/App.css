@@ -85,16 +85,13 @@ body{
 
 
 .list-item li input:focus {
-  border: 1px solid #27496E;
+  outline:none;
 }
 
 .list-item li input:active {
   border: 1px solid #27496E;
 }
 
-.list-item button {
-  padding:0px;
-}
 
 .list-item__buttons {
   display: flex;
@@ -129,6 +126,12 @@ body{
   cursor:pointer;
 }
 
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #fff;
+  opacity: 0.6;
+}
 
 .list-item .filters {
   display: flex;

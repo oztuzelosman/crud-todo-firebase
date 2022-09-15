@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './App.css';
 import './Navbar'
 import Navbar from './Navbar';
@@ -8,13 +8,61 @@ import {TbEditCircle} from 'react-icons/tb'
 import {CgCheckO} from 'react-icons/cg'
 
 function App() {
-  const [todos, setTodos] = useState([{id: uuidv4(), title: 'Learn react', completed:false}])
-  const [input, setInput] = useState('')
+  const initialState = JSON.parse(localStorage.getItem("todos")) || [];
+  const [todos, setTodos] = useState(initialState);
+  const [input, setInput] = useState('');
+  const [editTodo, setEditTodo] = useState(null);
 
-  const addTodo = (event)=>{
+ useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
+
+  
+ const updateTodo = (title, id, completed) => {
+    const newTodo = todos.map((todo) =>
+      todo.id === id ? { title, id, completed } : todo
+    );
+    setTodos(newTodo);
+    setEditTodo("");
+  };
+
+  useEffect(() => {
+    if(editTodo) {
+        setInput(editTodo.title);
+    } else {
+        setInput("")
+    }
+  }, [setInput, editTodo]);
+
+  const onFormSubmit = (event) => {
     event.preventDefault();
-    setTodos([...todos, {id: uuidv4(), title: input, completed:false}])
-    setInput('')
+    if (!editTodo) {
+      setTodos([...todos, { id: uuidv4(), title: input, completed: false }]);
+      setInput("");
+    } else {
+      updateTodo(input, editTodo.id, editTodo.completed);
+    }
+  };
+
+  const handleComplete = (todo) => {
+      setTodos(
+        todos.map((item) => {
+          if (item.id === todo.id) {
+            return { ...item, completed: !item.completed };
+          }
+          return item;
+        })
+      );
+    };
+
+  const handleEdit = ({ id }) => {
+    const findTodo = todos.find((todo) => todo.id === id);
+    setEditTodo(findTodo);
+  };
+
+  const handleDelete = ({id})=>{ 
+    console.log('clicked')
+    setTodos(todos.filter((todo)=> todo.id !== id))
   }
 
   return (
@@ -23,7 +71,9 @@ function App() {
 
     <form className='new-todo'>
       <input value={input} placeholder='Enter new todo' onChange={event =>(setInput(event.target.value))}/>
-      <button disabled={!input} type='submit' onClick={addTodo}>Add Todo</button>
+      <button disabled={!input} type='submit' onClick={onFormSubmit}>
+        {editTodo ? "Update" : "Add Todo"}
+      </button>
     </form>
 
       <div className='list-item'>
@@ -31,17 +81,21 @@ function App() {
         {todos.map((todo)=> (
           <li key={todo.id}>
             <div>
-              <input type='text' value={todo.title} className='list' onChange={(event)=> event.preventDefault()}/>
+              <input 
+                type='text'
+                value={todo.title} 
+                className={`list ${todo.completed ? "complete" : ""}`}                
+                onChange={(event)=> event.preventDefault()}/>
             </div>
 
             <div className='list-item__buttons'>
-            <button>              
+            <button onClick={()=> handleDelete(todo)}>              
               <RiCloseCircleLine className='list-item__buttons__cl'/>
             </button>
-            <button>              
+            <button onClick={()=>handleEdit(todo)}>              
               <TbEditCircle className='list-item__buttons__ed'/>
             </button>
-            <button>              
+            <button onClick={()=> handleComplete(todo)}>              
               <CgCheckO className='list-item__buttons__ch'/>
             </button>
             </div>
