@@ -1,0 +1,23 @@
+.weather{
+  font-family: 'Comfortaa';
+  display:flex;
+  flex-direction:row;
+}
+.weather-info{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.weather-icon__img{
+  width:4rem;
+  height:4rem;
+}
+.weather-degree{
+  margin-right:1rem;
+}
+.weather-date{
+  margin-right:1rem;
+}
