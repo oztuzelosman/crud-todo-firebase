@@ -21,14 +21,13 @@ body{
 
 .new-todo button {
   font: inherit;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   border: 1px solid #27496D;
   background-color: #27496D ;
   color: #e4e4e5;
   border-radius:  9px;
-  margin-left: 1rem;
   font-weight: 700;
 }
 
@@ -43,7 +42,7 @@ body{
   padding: 0.5rem;
   border-radius: 6px;
   border: 1px solid #27496D;
-  width: 38rem;
+  width: 40rem;
   max-width: 100%;
 }
 
@@ -75,7 +74,7 @@ body{
 
 .list-item li input{
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   background-color: #27496D;
   border: none;
   color: #e4e4e4;
@@ -109,20 +108,20 @@ body{
 }
 
 .list-item__buttons__cl {
-  height:2rem;
-  width:2rem;
+  height:1.5rem;
+  width:1.5rem;
   cursor:pointer;
 }
 
 .list-item__buttons__ed {
-  height:2rem;
-  width:2rem;
+  height:1.5rem;
+  width:1.5rem;
   cursor:pointer;
 }
 
 .list-item__buttons__ch {
-  height:2rem;
-  width:2rem;
+  height:1.5rem;
+  width:1.5rem;
   cursor:pointer;
 }
 
