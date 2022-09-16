@@ -35,6 +35,7 @@ export default function Search ({onSearchChange}) {
     loadOptions={loadOptions}
     className='navbar_search'
     />
+
   )
 
 

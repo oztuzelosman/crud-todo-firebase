@@ -1,4 +1,4 @@
- .navbar {
+.navbar {
     background-color: #0C7B93;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -9,13 +9,15 @@
 }
 
 .navbar_search{
-    margin-right:5rem;
+    margin-right: 5rem;
     font-family: 'Comfortaa';
-    font-size:1rem;
-    width:30rem;
-    color:#333;
+    font-size: 1rem;
+    width: 40rem;
+    color: #333;
+    position: fixed !important;
+    left: 16rem;
+    /* box-sizing: border-box; */
 }
-
 
 .navbar nav {
     display: flex;
