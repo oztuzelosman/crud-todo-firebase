@@ -7,16 +7,16 @@ body{
 /*components*/
 
 .new-todo {
-  display: flex;
+   display: flex;
   justify-content: space-between;
   background-color: #fff;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
   width: 50rem;
   max-width: 95%;
   border-radius: 9px;
   text-align: center;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .new-todo button {
