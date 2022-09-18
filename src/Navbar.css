@@ -16,8 +16,17 @@
     color: #333;
     position: absolute !important;
     left: 16rem;
-    /* scroll-behavior: smooth; */
-    /* box-sizing: border-box; */
+}
+
+@media only screen and (max-width: 84em) {
+    .navbar_search {
+        margin-right: 5rem;
+        font-family: 'Comfortaa';
+        font-size: 1rem;
+        width: 18rem;
+        color: #333;
+        position: absolute !important;
+    }
 }
 
 .navbar nav {
@@ -25,6 +34,57 @@
     align-items: center;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 46em) {
+    .navbar a.brand {
+        letter-spacing: 10px;
+        font-size: 2rem !important;
+        margin-top: 2rem;
+    }
+}
+@media only screen and (max-width: 63.5em) {
+    .navbar nav {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    .navbar_search{
+        font-size: 1.5rem;
+        width: 30rem;
+        color: #333;
+        left: auto;
+        top: 11rem;
+        margin: 2rem auto;
+    }
+    .css-1s2u09g-control {
+        background-color: hsl(0, 0%, 100%);
+        border-color: hsl(0, 0%, 80%);
+        border-radius: 8px;
+        border-style: solid;
+        border-width: 1px;
+        padding: 1rem;
+        cursor: default;
+    }
+    .navbar a.brand {
+        letter-spacing: 15px;
+        font-size: 3rem !important;
+        margin-top: 2rem;
+    }
+
+    .navbar a:last-child {
+        margin-top: 2rem;
+        font-size: 2rem;
+        margin-bottom: 7rem;
+        letter-spacing: 7.5px;
+        padding: 1.5rem !important;
+    }
+}
+
 .navbar a.brand {
     margin-right: auto;
     color: #e4e4e4;
@@ -35,10 +95,9 @@
 .navbar a:last-child {
     color: #e4e4e4;
     text-decoration: none;
-    margin-left: 40px;
-    padding: 8px;
     border: 1px solid #e4e4e4;
-    border-radius: 4px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 .navbar a:last-child:hover {
     background: #e4e4e4;

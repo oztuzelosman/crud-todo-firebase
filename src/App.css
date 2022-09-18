@@ -4,10 +4,24 @@
 body{
   font-family: 'Comfortaa', cursive;
 }
+
 /*components*/
 
+.todo-section{
+  display: flex;
+  background-color: pink;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  width: 95%;
+  margin: auto;
+  padding: 1rem;
+}
+
 .new-todo {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   background-color: #fff;
   padding: 1rem;
@@ -16,7 +30,7 @@ body{
   max-width: 95%;
   border-radius: 9px;
   text-align: center;
- box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .new-todo button {
@@ -138,4 +152,62 @@ body{
 }
 .list-item button {
   flex-grow: 1;
+}
+
+@media only screen and (max-width: 46em) {
+
+  .list-item li{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .list-item li input{
+    padding: 1.3rem !important;
+    font-size: 2rem !important;
+    border-radius: 2rem;
+  }
+}
+
+@media only screen and (max-width: 63.5em) {
+  .new-todo {
+    display: flex;
+    flex-direction:column;
+  }
+  .new-todo button {
+    font-size: 2rem !important;
+  }
+
+  .new-todo input {
+    padding: 1rem !important;
+    width: 95% !important;
+    margin-bottom: 1rem;
+    font-size: 1.5rem !important;
+  }
+  .list-item li input{
+    padding: 1.3rem !important;
+    font-size: 2rem !important;
+    border-radius:2rem;
+  }
+
+  .list-item__buttons__cl {
+    height:2.5rem !important;
+    width:2.5rem !important;
+    cursor:pointer;
+  }
+
+  .list-item__buttons__ed {
+    height:2.5rem !important;
+    width:2.5rem !important;
+    cursor:pointer;
+  }
+
+  .list-item__buttons__ch {
+    height:2.5rem !important;
+    width:2.5rem  !important;
+    cursor:pointer;
+  }
 }

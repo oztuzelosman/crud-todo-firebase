@@ -68,43 +68,43 @@ function App() {
   return (
     <div className="container">
     <Navbar/>
+     <div className='todo-section'>
+        <form className='new-todo'>
+          <input value={input} placeholder='Enter new todo' onChange={event =>(setInput(event.target.value))}/>
+          <button disabled={!input} type='submit' onClick={onFormSubmit}>
+            {editTodo ? "Update" : "Add Todo"}
+          </button>
+        </form>
 
-    <form className='new-todo'>
-      <input value={input} placeholder='Enter new todo' onChange={event =>(setInput(event.target.value))}/>
-      <button disabled={!input} type='submit' onClick={onFormSubmit}>
-        {editTodo ? "Update" : "Add Todo"}
-      </button>
-    </form>
+          <div className='list-item'>
+          <ul>
+            {todos.map((todo)=> (
+              <li className='list-item__container' key={todo.id}>
+                <div>
+                  <input 
+                    type='text'
+                    value={todo.title} 
+                    className={`list ${todo.completed ? "complete" : ""}`}                
+                    onChange={(event)=> event.preventDefault()}/>
+                </div>
 
-      <div className='list-item'>
-      <ul>
-        {todos.map((todo)=> (
-          <li key={todo.id}>
-            <div>
-              <input 
-                type='text'
-                value={todo.title} 
-                className={`list ${todo.completed ? "complete" : ""}`}                
-                onChange={(event)=> event.preventDefault()}/>
-            </div>
+                <div className='list-item__buttons'>
+                <button onClick={()=> handleDelete(todo)}>              
+                  <RiCloseCircleLine className='list-item__buttons__cl'/>
+                </button>
+                <button onClick={()=>handleEdit(todo)}>              
+                  <TbEditCircle className='list-item__buttons__ed'/>
+                </button>
+                <button onClick={()=> handleComplete(todo)}>              
+                  <CgCheckO className='list-item__buttons__ch'/>
+                </button>
+                </div>
 
-            <div className='list-item__buttons'>
-            <button onClick={()=> handleDelete(todo)}>              
-              <RiCloseCircleLine className='list-item__buttons__cl'/>
-            </button>
-            <button onClick={()=>handleEdit(todo)}>              
-              <TbEditCircle className='list-item__buttons__ed'/>
-            </button>
-            <button onClick={()=> handleComplete(todo)}>              
-              <CgCheckO className='list-item__buttons__ch'/>
-            </button>
-            </div>
-
-          </li>
-        ))}
-      </ul>
+              </li>
+            ))}
+          </ul>
+          </div>
       </div>
-   
     </div>
   );
 }
