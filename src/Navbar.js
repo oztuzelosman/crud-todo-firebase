@@ -35,11 +35,16 @@ export default function Navbar() {
   return (
     <div className="navbar">
     <nav>
+    
     <a href=" " className="brand">
     <h1>Todo List App</h1>
     </a>
-    <Search onSearchChange={handleOnSearchChange}/>
-    { currentWeather && <Current data={currentWeather}/>}
+
+    <div className='weather-section'> 
+      <Search onSearchChange={handleOnSearchChange}/>
+      { currentWeather && <Current data={currentWeather}/>}
+    </div>
+
     <a href=" ">Weather Info</a>
     </nav>
     </div>

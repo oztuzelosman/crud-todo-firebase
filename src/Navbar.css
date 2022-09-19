@@ -7,24 +7,27 @@
     font-size: 1.25rem;
     font-weight: 700;
 }
-
+.weather-section{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .navbar_search {   
     margin-right: 5rem;
     font-family: 'Comfortaa';
     font-size: 1rem;
     width: 38rem;
     color: #333;
-    position: absolute !important;
-    left: 16rem;
 }
-
 
 .navbar nav {
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
-
 
 .navbar a.brand {
     margin-right: auto;
@@ -53,16 +56,27 @@
         overflow-wrap: break-word;
         width: 70%;
         text-indent: 1rem;
-    }
-}
-@media only screen and (max-width: 46em) {
-    .navbar a.brand {
-        letter-spacing: 10px;
+        letter-spacing: 10px !important;
         font-size: 2rem !important;
         margin-top: 2rem;
     }
 }
-@media only screen and (max-width: 63.5em) {
+
+@media only screen and (max-width: 83.5em) {
+    .weather-section{
+        font-family:'Comfortaa';
+        background-color:#fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding-top:2rem;
+        padding:1.5rem;
+        border-radius:1.5rem;
+        min-height:max-content;
+    }
     .navbar nav {
         display: flex;
         align-items: center;
@@ -74,11 +88,11 @@
         padding-bottom: 1rem;
     }
     .navbar_search{
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
         width: 30rem;
         color: #333;
-        left: auto;
-        top: 11rem;
+        /* left: auto; */
+        /* top: 11rem; */
         margin: 2rem auto;
     }
     .css-1s2u09g-control {
@@ -104,14 +118,12 @@
         padding: 1.5rem !important;
     }
 }
-
+/*
 @media only screen and (max-width: 84em) {
     .navbar_search {
-        margin-right: 5rem;
         font-family: 'Comfortaa';
         font-size: 1rem;
-        width: 18rem;
         color: #333;
-        position: absolute !important;
     }
 }
+*/

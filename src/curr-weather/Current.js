@@ -2,7 +2,6 @@ import './Current.css'
 
 export default function Current ({data}){
   return ( 
-    <div className='weather'>
       <div className='weather-info'>
     
         <div className='weather-img'>
@@ -20,6 +19,5 @@ export default function Current ({data}){
         </p>
     
       </div>
-    </div>
   )
 }
