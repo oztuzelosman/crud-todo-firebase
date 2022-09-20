@@ -8,6 +8,7 @@ body{
 /*components*/
 
   .container{
+    width:auto;
     min-height:100vh;
   }
 
@@ -161,8 +162,13 @@ body{
   flex-grow: 1;
 }
 
-@media only screen and (max-width: 46em) {
+@media only screen and (max-width: 24em) {
+  html{
+    font-size:8px !important;
+  }
+}
 
+@media only screen and (max-width: 46em) {
   .list-item li{
     display: flex;
     flex-direction: row;
@@ -181,15 +187,8 @@ body{
 }
 
 @media only screen and (max-width: 83.5em) {
-  input[type="text"],
-  input[type="number"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="password"] {
-    font-size: 16px !important;
-  }
-
   .container{
+    width:auto;
     min-width:max-content;
     overflow:scroll;
   }
