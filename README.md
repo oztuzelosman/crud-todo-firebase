@@ -1,4 +1,4 @@
-# Getting Started with Todo List App
+# Todo List App
 
 This is basic app that serves need of users to add new todos, delete and edit them. In addition to basic CRUD functionality this app shows weather info based on search via OpenWeatherApp.
 
