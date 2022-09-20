@@ -8,8 +8,7 @@ body{
 /*components*/
 
   .container{
-    min-width:max-content;
-    overflow:scroll;
+    min-height:100vh;
   }
 
 .todo-section{
@@ -188,6 +187,11 @@ body{
   input[type="tel"],
   input[type="password"] {
     font-size: 16px;
+  }
+
+  .container{
+    min-width:max-content;
+    overflow:scroll;
   }
 
   .new-todo {
