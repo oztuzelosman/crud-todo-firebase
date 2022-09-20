@@ -163,12 +163,17 @@ body{
 }
 
 @media only screen and (max-width: 24em) {
+
   html{
-    font-size:8px !important;
+    font-size:4px !important;
   }
 }
 
-@media only screen and (max-width: 46em) {
+@media only screen and (max-width: 57em) {
+
+  html{
+    font-size:6px !important;
+  }
   .list-item li{
     display: flex;
     flex-direction: row;
