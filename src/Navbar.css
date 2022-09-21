@@ -50,6 +50,10 @@
 }
 
 @media only screen and (max-width: 46em) {
+
+    .navbar a:last-child {
+        letter-spacing:8px;
+    }
     .navbar a.brand {
         font-size: 1.35rem;
         font-weight: 700;
@@ -70,8 +74,7 @@
         align-content: center;
         justify-content: center;
         align-items: center;
-        padding-top:2rem;
-        padding:1.5rem;
+        padding:1rem;
         border-radius:1.5rem;
         min-height:max-content;
     }
@@ -87,20 +90,13 @@
     }
     .navbar_search{
         font-size: 1.5rem !important;
-        width: 30rem;
+        width: 25rem;
         color: #333;
-        /* left: auto; */
-        /* top: 11rem; */
-        margin: 2rem auto;
+        margin: 1.3rem auto;
     }
     .css-1s2u09g-control {
-        background-color: hsl(0, 0%, 100%);
-        border-color: hsl(0, 0%, 80%);
-        border-radius: 8px;
-        border-style: solid;
-        border-width: 1px;
-        padding: 1rem;
-        cursor: default;
+        padding: 0.5rem;
+        border-radius: 1rem !important;
     }
     .navbar a.brand {
         letter-spacing: 15px;

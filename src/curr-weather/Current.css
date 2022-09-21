@@ -43,13 +43,14 @@
     letter-spacing: 5px;
   }
   .weather-icon__img{
-    width:5rem !important;
-    height:5rem !important;;
+    width: 3.7rem !important;
+    height: 3.7rem !important;
   }
   .weather-img{
-    margin-right: 1rem;
-    width: 5.5rem;
-    height: 5.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #0C7B93;
     border-radius: 50%;
     display: flex;
