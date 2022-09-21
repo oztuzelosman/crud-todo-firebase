@@ -49,8 +49,14 @@
     color: #333;
 }
 
-@media only screen and (max-width: 46em) {
 
+/*
+@media only screen and (max-width: 24em) {
+
+}
+*/
+
+@media only screen and (max-width:57em) {
     .navbar a:last-child {
         letter-spacing:8px;
     }
@@ -61,6 +67,11 @@
         letter-spacing: 6px !important;
         font-size: 2rem !important;
         margin-top: 2rem;
+
+    }
+    .css-1s2u09g-control {
+        padding: 0.5rem;
+        border-radius: 1rem !important;
     }
 }
 

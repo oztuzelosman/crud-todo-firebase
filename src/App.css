@@ -161,19 +161,16 @@ body{
 .list-item button {
   flex-grow: 1;
 }
-
+/*
 @media only screen and (max-width: 24em) {
 
   html{
     font-size:4px !important;
   }
 }
-
-@media only screen and (max-width: 57em) {
-
-  html{
-    font-size:6px !important;
-  }
+*/
+@media only screen and (max-width: 24em) {
+ 
   .list-item li{
     display: flex;
     flex-direction: row;

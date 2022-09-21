@@ -72,7 +72,7 @@ function App() {
         <form className='new-todo'>
           <input value={input} placeholder='Enter new todo' onChange={event =>(setInput(event.target.value))}/>
           <button disabled={!input} type='submit' onClick={onFormSubmit}>
-            {editTodo ? "Update" : "Add Todo"}
+           {editTodo ? "Update" : "Add Todo"}
           </button>
         </form>
 
