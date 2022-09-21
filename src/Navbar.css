@@ -53,10 +53,8 @@
     .navbar a.brand {
         font-size: 1.35rem;
         font-weight: 700;
-        overflow-wrap: break-word;
-        width: 70%;
         text-indent: 1rem;
-        letter-spacing: 10px !important;
+        letter-spacing: 6px !important;
         font-size: 2rem !important;
         margin-top: 2rem;
     }
@@ -126,4 +124,4 @@
         color: #333;
     }
 }
-*/
+ */
