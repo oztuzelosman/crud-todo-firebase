@@ -1,8 +1,8 @@
 .navbar {
-    background-color: #0C7B93;
+    background-color: #af0171;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: #e4e4e4;
+    color: #fff;
     font-family: 'Indie Flower';
     font-size: 1.25rem;
     font-weight: 700;
@@ -31,21 +31,21 @@
 
 .navbar a.brand {
     margin-right: auto;
-    color: #e4e4e4;
+    color: #fff;
     text-decoration: none;
     font-size: 1.35rem;
     font-weight: 700;
     overflow-wrap:break-word;
 }
 .navbar a:last-child {
-    color: #e4e4e4;
+    color: #fff;
     text-decoration: none;
-    border: 1px solid #e4e4e4;
+    border: 1px solid #fff;
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
 .navbar a:last-child:hover {
-    background: #e4e4e4;
+    background: #fff;
     color: #333;
 }
 
@@ -54,81 +54,111 @@
 @media only screen and (max-width: 24em) {
 
 }
-*/
-
-@media only screen and (max-width:57em) {
-    .navbar a:last-child {
-        letter-spacing:8px;
-    }
-    .navbar a.brand {
-        font-size: 1.35rem;
-        font-weight: 700;
-        text-indent: 1rem;
-        letter-spacing: 6px !important;
-        font-size: 2rem !important;
-        margin-top: 2rem;
-
-    }
-    .css-1s2u09g-control {
-        padding: 0.5rem;
-        border-radius: 1rem !important;
-    }
-}
-
-@media only screen and (max-width: 83.5em) {
-    .weather-section{
-        font-family:'Comfortaa';
-        background-color:#fff;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        padding:1rem;
-        border-radius:1.5rem;
-        min-height:max-content;
-    }
-    .navbar nav {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        padding-bottom: 1rem;
-    }
-    .navbar_search{
-        font-size: 1.5rem !important;
-        width: 25rem;
-        color: #333;
-        margin: 1.3rem auto;
-    }
-    .css-1s2u09g-control {
-        padding: 0.5rem;
-        border-radius: 1rem !important;
-    }
-    .navbar a.brand {
-        letter-spacing: 15px;
-        font-size: 3rem !important;
-        margin-top: 2rem;
-    }
-
-    .navbar a:last-child {
-        margin-top: 2rem;
-        font-size: 2rem;
-        margin-bottom: 7rem;
-        letter-spacing: 7.5px;
-        padding: 1.5rem !important;
-    }
-}
-/*
-@media only screen and (max-width: 84em) {
-    .navbar_search {
-        font-family: 'Comfortaa';
-        font-size: 1rem;
-        color: #333;
-    }
-}
  */
+
+
+    @media only screen and (max-width: 84.5em) {
+        .weather-section{
+            font-family:'Comfortaa';
+            background-color:#fff;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding:1rem;
+            border-radius:1.5rem;
+            min-height:max-content;
+        }
+        .navbar nav {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            padding-bottom: 1rem;
+        }
+        .navbar_search{
+            font-size: 1.5rem !important;
+            width: 25rem;
+            color: #333;
+            margin: 1.3rem auto;
+        }
+        .css-1s2u09g-control {
+            padding: 0.5rem;
+            border-radius: 1rem !important;
+        }
+        .navbar a.brand {
+            letter-spacing: 15px;
+            font-size: 3rem !important;
+            margin-top: 2rem;
+        }
+
+        .navbar a:last-child {
+            margin-top: 2rem;
+            font-size: 2rem;
+            margin-bottom: 7rem;
+            letter-spacing: 7.5px;
+            padding: 1.5rem !important;
+        }
+    }
+
+    @media only screen and (max-width:38em) {
+
+        html{
+            font-size:5px;
+        }
+        .weather-section{
+            font-family:'Comfortaa';
+            background-color:#fff;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding:1rem;
+            border-radius:1.5rem;
+            min-height:max-content;
+        }
+        .navbar nav {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            padding-bottom: 1rem;
+        }
+        .navbar_search{
+            font-size: 1.5rem !important;
+            width: 27rem;
+            color: #333;
+            margin: 1.3rem auto;
+        }
+        .css-1s2u09g-control {
+            min-height:unset;
+            padding: 0.5rem;
+            border-radius: 1rem !important;
+        }
+        .navbar a.brand {
+            letter-spacing: 8px;
+            font-size: 3rem !important;
+            margin-top: 2rem;
+        }
+
+        .navbar a:last-child {
+            margin-top: 2rem;
+            font-size: 2rem;
+            margin-bottom: 7rem;
+            letter-spacing: 3px;
+            padding: 1.5rem !important;
+        }
+    }
+
+
+

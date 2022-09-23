@@ -3,14 +3,15 @@
 
 body{
   font-family: 'Comfortaa', cursive;
+  background-color: #FBF2CF !important;
 }
 
 /*components*/
 
-  .container{
-    width:auto;
-    min-height:100vh;
-  }
+.container{
+  width:auto;
+  min-height:100vh;
+}
 
 .todo-section{
   display: flex;
@@ -44,8 +45,8 @@ body{
   font-size: 1.2rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  border: 1px solid #27496D;
-  background-color: #27496D ;
+  border: 1px solid #E80F88;
+  background-color: #E80F88 ;
   color: #e4e4e5;
   border-radius:  9px;
   font-weight: 700;
@@ -61,7 +62,7 @@ body{
   font: inherit;
   padding: 0.5rem;
   border-radius: 6px;
-  border: 1px solid #27496D;
+  border: 1px solid #E80F88;
   width: 40rem;
   max-width: 100%;
 }
@@ -88,7 +89,7 @@ body{
   list-style-type: none;
   margin: 20px 0;
   color: #e4e4e4;
-  background-color: #27496D;
+  background-color: #E80F88;
   font-weight: 400;
   overflow:hidden;
   min-width:fit-content;
@@ -97,7 +98,7 @@ body{
 .list-item li input{
   padding: 1rem;
   font-size: 1.1rem;
-  background-color: #27496D;
+  background-color: #E80F88;
   border: none;
   color: #e4e4e4;
   font-family: 'Comfortaa';
@@ -110,7 +111,7 @@ body{
 }
 
 .list-item li input:active {
-  border: 1px solid #27496E;
+  border: 1px solid #E80F88;
 }
 
 
@@ -118,12 +119,12 @@ body{
   display: flex;
   flex-direction: row;
   margin-right:1rem;
-  background-color:#27496E
+  background-color:#E80F88
 }
 
 
 .list-item__buttons button {
-  background-color:#27496E;
+  background-color:#E80F88;
   border:none;
   color:#e4e4e4;
   padding:0.25rem;
@@ -168,31 +169,12 @@ body{
     font-size:4px !important;
   }
 }
-*/
-@media only screen and (max-width: 24em) {
- 
-  .list-item li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    min-width:max-content;
-  }
+ */
 
-  .list-item li input{
-    padding: 1.3rem !important;
-    font-size: 2rem !important;
-    border-radius: 2rem;
-  }
-}
-
-@media only screen and (max-width: 83.5em) {
+@media only screen and (max-width: 84.5em) {
   .container{
     width:auto;
     min-width:max-content;
-    overflow:scroll;
   }
 
   .new-todo {
@@ -233,3 +215,23 @@ body{
     cursor:pointer;
   }
 }
+
+@media only screen and (max-width: 38em) {
+
+  .list-item li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-width:max-content;
+  }
+
+  .list-item li input{
+    padding: 1.3rem !important;
+    font-size: 2rem !important;
+    border-radius: 2rem;
+  }
+}
+
