@@ -37,7 +37,11 @@ export default function Navbar() {
     <nav>
     
     <a href=" " className="brand">
-    <h1>Todo List App</h1>
+    <h1>
+      <span className='brand-todo'>Todo </span>
+      <span className='brand-list'>List </span>
+      <span className='brand-app'>App</span>
+    </h1>
     </a>
 
     <div className='weather-section'> 

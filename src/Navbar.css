@@ -135,28 +135,42 @@
             padding-bottom: 1rem;
         }
         .navbar_search{
-            font-size: 1.5rem !important;
-            width: 27rem;
+            font-size: 2.5rem !important;
+            width: 35rem !important;
             color: #333;
-            margin: 1.3rem auto;
+            margin: 1.5rem;
         }
         .css-1s2u09g-control {
             min-height:unset;
             padding: 0.5rem;
             border-radius: 1rem !important;
+            height:6rem !important;
         }
         .navbar a.brand {
             letter-spacing: 8px;
-            font-size: 3rem !important;
+            font-size: 2.5rem !important;
             margin-top: 2rem;
         }
 
         .navbar a:last-child {
             margin-top: 2rem;
-            font-size: 2rem;
+            font-size: 3.7rem;
             margin-bottom: 7rem;
             letter-spacing: 3px;
             padding: 1.5rem !important;
+        }
+
+        .brand-todo{
+            font-size: 13rem;
+            letter-spacing: 4rem !important;
+            margin-left: 3.5rem;
+        }
+
+        .brand-list{
+            display:none;
+        }
+        .brand-app{
+            display:none;
         }
     }
 

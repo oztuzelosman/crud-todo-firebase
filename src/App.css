@@ -217,7 +217,60 @@ body{
 }
 
 @media only screen and (max-width: 38em) {
+.new-todo {
+  display: flex;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 3rem auto;
+  min-width: auto !important;
+  max-width: 95%;
+  border-radius: 9px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+  .new-todo button {
+    font-size: 3rem !important;
+  }
 
+  .new-todo input {
+    padding: 1rem !important;
+    width: 95% !important;
+    margin-bottom: 1rem;
+    font-size: 2.5rem !important;
+  }
+
+
+.list-item {
+  width: auto !important;
+  margin: 2rem auto;
+  max-width: 95%;
+}
+
+  .list-item li input{
+    padding: 1.3rem !important;
+    font-size: 3rem !important;
+    border-radius: 2rem;
+  }
+
+  .list-item__buttons__cl {
+    height:4rem !important;
+    width:4rem !important;
+    cursor:pointer;
+    margin-right:1.5rem;
+  }
+
+  .list-item__buttons__ed {
+    height:4rem !important;
+    width:4rem !important;
+    cursor:pointer;
+    margin-right:1.5rem;
+  }
+
+  .list-item__buttons__ch {
+    height:4rem !important;
+    width:4rem !important;
+    cursor:pointer;
+  }
   .list-item li{
     display: flex;
     flex-direction: row;
@@ -226,12 +279,6 @@ body{
     align-content: center;
     flex-wrap: wrap;
     min-width:max-content;
-  }
-
-  .list-item li input{
-    padding: 1.3rem !important;
-    font-size: 2rem !important;
-    border-radius: 2rem;
   }
 }
 
